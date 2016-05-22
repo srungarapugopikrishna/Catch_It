@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Catch It</title>
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/flipclock.css">
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/jquery.toaster.js"></script>
+
+		</head>
+	<body onload="callMainFunc()">
+		<div class="container">
+            <div id="notify"></div>
+
+            <div>
+                <h1 align="center"> &#9787;&#9734;&#9830;&#9786;&#9733;   Catch It &#9733;&#9786;&#9830;&#9734;&#9787;</h1>
+                <div id="score"></div>
+                <b>Level : </b>
+                <select id="level" onchange="levelChange()">
+                <option value="0">Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+                <option value="3">Level 4</option>
+                <option value="4">Level 5</option>
+                <option value="5">Level 6</option>
+                <option value="6">Level 7</option>
+                <option value="7">Level 8</option>
+                <option value="8">Level 9</option>
+                <option value="9">Level 10</option>
+                <option value="10">Level 11</option>
+                <option value="11">Level 12</option>
+                <option value="12">Level 13</option>
+                <option value="13">Level 14</option>
+                <option value="14">Level 15</option>
+                </select>
+            </div>
+
+
+			<div class="mydiv"	id="gameDiv">
+				<div class="circle" id="circle"></div>
+			</div>
+		</div>		
+<!--	<div class="clock" style="margin:2em;"></div>
+	<div class="message"></div>
+						<script src="js/flipclock.js"></script>
+						-->
+
+					<script src="js/game.js"></script>
+
+	</body>
+</html>
